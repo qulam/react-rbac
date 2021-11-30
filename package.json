@@ -1,0 +1,83 @@
+{
+  "name": "react-material-dashboard",
+  "author": "DeviasIO",
+  "licence": "MIT",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "eslint": "eslint ./src",
+    "eslint-fix": "eslint --fix ./src",
+    "start": "cross-env REACT_APP_ENVIRONMENT=development concurrently --kill-others \"react-scripts start\" \"npm run mock-server\"",
+    "build": "cross-env REACT_APP_ENVIRONMENT=production react-scripts build",
+    "mock-server": "nodemon mock-server/index.js && --unhandled-rejections=strict",
+    "beta": "cross-env REACT_APP_ENVIRONMENT=beta react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint ./",
+    "lint-fix": "eslint ./ --fix"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@devexpress/dx-react-chart": "^2.7.6",
+    "@devexpress/dx-react-chart-bootstrap4": "^2.7.6",
+    "@devexpress/dx-react-core": "^2.7.6",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@hookform/resolvers": "^2.8.1",
+    "@material-ui/core": "^5.0.0-alpha.28",
+    "@material-ui/icons": "^5.0.0-alpha.28",
+    "@material-ui/lab": "^5.0.0-alpha.43",
+    "@material-ui/styles": "^4.10.0",
+    "axios": "^0.21.4",
+    "chart.js": "^3.5.1",
+    "dotenv": "^10.0.0",
+    "formik": "^2.1.5",
+    "history": "^5.0.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.27.0",
+    "notistack": "^2.0.2",
+    "nprogress": "^0.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^3.0.4",
+    "react-dom": "^17.0.2",
+    "react-feather": "^2.0.8",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^7.16.1",
+    "react-input-mask": "^2.0.4",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-query": "^3.24.4",
+    "react-router": "^6.0.0-beta.0",
+    "react-router-dom": "^6.0.0-beta.0",
+    "react-scripts": "^4.0.3",
+    "uuid": "^8.3.0",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.2",
+    "connect-api-mocker": "^1.10.0",
+    "connect-multiparty": "^2.2.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "eslint-config-airbnb": "^18.2.1",
+    "express": "^4.17.1",
+    "faker": "^5.5.3",
+    "jwt-simple": "^0.5.6",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13"
+  }
+}

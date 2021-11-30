@@ -1,0 +1,6 @@
+export const ARReportTypes = {
+    AGING_SUMMARY: 'AGING_SUMMARY',
+    BY_LOCATION: 'BY_LOCATION',
+    BY_AGING_PAYER_GROUP: 'BY_AGING_PAYER_GROUP'
+
+};
